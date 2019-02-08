@@ -26,7 +26,6 @@ namespace TimerServiceWpf
         {
             observable
                 .ObserveOnDispatcher()
-                
                 .ToObservableChangeSet()
                 .Sort(new Comparer())
                 .Bind(out _data)
@@ -52,6 +51,7 @@ namespace TimerServiceWpf
 
             number = this.WhenAnyValue(x => x.Rate)
                 .Select(x => x > 0 ? Observable.Interval(TimeSpan.FromSeconds(60d / x)) : Observable.Empty<long>())
+
                 .Switch()
                  .ToProperty(this, x => x.Number);
         }

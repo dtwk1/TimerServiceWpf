@@ -55,7 +55,7 @@
                             </MultiBinding>
                         </alouda:NumberBox.Value>
                     </alouda:NumberBox>
-                    <Label>Rate</Label>
+                    <Label>Pulse</Label>
                     <ts:HorizontalToggleSwitch Name="Switch" Margin="5" IsChecked="{Binding Rate,Converter={StaticResource NumberToBooleanConverter},Mode=TwoWay}" UncheckedContent="Off"  CheckedContent="On" />
                 </st:AutoGrid>
                 <local:PulseEllipse x:Name="ellipse" Pulse="{Binding Number}" />

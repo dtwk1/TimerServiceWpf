@@ -139,6 +139,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Common\TimerViewModelFactory.cs" />
     <Compile Include="Control\PulseEllipse.cs" />
     <Compile Include="Converter\BooleanNumberToNumberMultiConverter.cs" />
     <Compile Include="Converter\NumberToBooleanConverter.cs" />
